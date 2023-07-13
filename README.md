@@ -1,2 +1,2 @@
 # page_indicator
-Animated page indicator of PageView
+Animated page indicator for PageView
