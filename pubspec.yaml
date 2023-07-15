@@ -1,5 +1,5 @@
 name: page_indicator
-description: Animated page indicator for PageView.
+description: Simple animated page indicator for PageView
 publish_to: 'none'
 version: 1.0.0+1
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:page_indicator/src/page_indicator.dart';
+import 'package:page_indicator/page_indicator.dart';
 
 void main() {
   runApp(const MyApp());
