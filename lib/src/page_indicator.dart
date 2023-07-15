@@ -32,7 +32,9 @@ class PageIndicator extends StatelessWidget {
           pageCount: count,
           dotRadius: dotRadius,
           spacing: spacing,
-          scrollPosition: controller.hasClients ? controller.page ?? 0.0 : 0.0,
+          scrollPosition: controller.hasClients && controller.page != null
+              ? controller.page ?? 0.0
+              : 0.0,
           dotOutlineThickness: dotOutlineThickness,
           dotFillColor: dotFillColor,
           dotOutlineColor: dotOutlineColor,
