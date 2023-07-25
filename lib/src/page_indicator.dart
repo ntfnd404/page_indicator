@@ -27,18 +27,20 @@ class PageIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedBuilder(
       animation: controller,
-      builder: (BuildContext context, Widget? child) => CustomPaint(
-        painter: PageIndicatorPainter(
-          pageCount: count,
-          dotRadius: dotRadius,
-          spacing: spacing,
-          scrollPosition: controller.hasClients && controller.page != null
-              ? controller.page ?? 0.0
-              : 0.0,
-          dotOutlineThickness: dotOutlineThickness,
-          dotFillColor: dotFillColor,
-          dotOutlineColor: dotOutlineColor,
-          indicatorColor: indicatorColor,
+      builder: (BuildContext context, Widget? child) => RepaintBoundary(
+        child: CustomPaint(
+          painter: PageIndicatorPainter(
+            pageCount: count,
+            dotRadius: dotRadius,
+            spacing: spacing,
+            scrollPosition: controller.hasClients && controller.page != null
+                ? controller.page ?? 0.0
+                : 0.0,
+            dotOutlineThickness: dotOutlineThickness,
+            dotFillColor: dotFillColor,
+            dotOutlineColor: dotOutlineColor,
+            indicatorColor: indicatorColor,
+          ),
         ),
       ),
     );
