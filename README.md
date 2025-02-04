@@ -3,4 +3,4 @@
 Simple animated page indicator for PageView
 
 
-https://github.com/user-attachments/assets/81c6f03b-ab64-4987-beac-ccf4ab5a9a71
+https://github.com/user-attachments/assets/fb8a5cf5-4cb9-45da-901c-454efeb69436
